@@ -29,7 +29,9 @@
     "cover-local": "istanbul cover -x lodash.custom.js _mocha -- --timeout 10000 --recursive ./test/specs",
     "coveralls": "istanbul-coveralls",
     "pre-release": "npm test && npm run pro-local && npm run pro",
-    "lodash": "lodash include=isUndefined,isFunction,toArray,includes,union,each,isString,merge,isObject,set exports=node"
+    "lodash": "lodash include=isUndefined,isFunction,toArray,includes,union,each,isString,merge,isObject,set exports=node",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "browser-sync-client": "^2.3.3",
@@ -56,7 +58,8 @@
     "server-destroy": "1.0.1",
     "socket.io": "1.4.8",
     "ua-parser-js": "0.7.10",
-    "yargs": "4.8.1"
+    "yargs": "4.8.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "browser-sync-spa": "1.0.2",
@@ -91,5 +94,6 @@
     "css",
     "live reload",
     "sync"
-  ]
+  ],
+  "snyk": true
 }
