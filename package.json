@@ -38,7 +38,7 @@
     "chokidar": "1.6.0",
     "connect": "3.4.1",
     "dev-ip": "^1.0.1",
-    "easy-extender": "2.3.2",
+    "easy-extender": "2.3.4",
     "eazy-logger": "3.0.2",
     "emitter-steward": "^1.0.0",
     "fs-extra": "0.30.0",
